@@ -1,0 +1,84 @@
+:root {
+    --heart-color: #ff5873;
+    --background-color: #ebc8c0;
+    --white: #fff;
+  }
+  
+  body {
+    font-family: Tahoma, sans-serif; /* Consider a sans-serif fallback */
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    color: var(--heart-color);
+    /* Remove background image for better performance */
+  }
+  
+  .card {
+    text-align: center;
+    max-width: 350px; /* Set a reasonable max-width for responsiveness */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    border-radius: 5px; /* Add subtle border-radius for styling */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow for depth */
+  }
+  
+  .title {
+    font-size: 1.5rem; /* Use rem units for responsiveness */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .animation {
+    display: block; /* Change from inline-block for responsiveness */
+    margin: 0 auto;
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+    max-width: 200px; /* Set a max-width to prevent image overflow */
+  }
+  
+  .text {
+    padding: 10px;
+    font-size: 1rem;
+    line-height: 1.5; /* Improve readability with line-height */
+  }
+  
+  .button {
+    background: var(--heart-color);
+    color: var(--white);
+    border: 0 none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Add border-radius for styling */
+    transition: background-color 0.2s ease-in-out; /* Add smooth hover effect */
+  }
+  
+  .button:hover {
+    background-color: darken(var(--heart-color), 10%); /* Darken button on hover */
+  }
+  
+  .button.button__negative {
+    background: var(--white);
+    color: var(--heart-color);
+  }
+  
+  .button.button__error {
+    background-color: #f7c6c7; /* Use lighter pink for error */
+    color: #f95050; /* Use darker pink for error text */
+    max-width: 100%; /* Ensure max-width for responsiveness */
+    padding: 15px 20px;
+    margin: 10px 0;
+    display: none; /* Initially hidden */
+  }
+  
